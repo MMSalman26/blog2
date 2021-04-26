@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background: #ebf5fc; */
+  /* background: rgb(114, 228, 248); */
+  background: linear-gradient(#4568dc, #b06ab3);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+
+.container .card {
+  width: 320px;
+  margin: 20px;
+  padding: 40px 30px;
+  /* background: #ebf5fc; */
+  background: rgb(163, 195, 253);
+  border-radius: 40px;
+  /* box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), */
+  /* 16px 16px 20px rgba(0, 0, 0, 0.1); */
+
+  box-shadow: -6px -6px 20px rgba(93, 255, 255, 0.603),
+    6px 6px 20px rgba(255, 255, 255, 1);
+}
+
+.container .card:hover {
+  /* box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 1), */
+  /* /* inset 6px 6px 20px rgba(0, 0, 0, 0.05); */
+  box-shadow: inset -6px -6px 20px rgba(53, 61, 175, 0.527),
+    inset 6px 6px 20px rgba(245, 55, 198, 0.39);
+}
+
+.container .card .imgbx {
+  position: relative;
+  text-align: center;
+}
+
+.container .card .imgbx img {
+  max-width: 120px;
+}
+
+.container .card .contentbx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container .card .contentbx h2 {
+  /* color: #32a3b1; */
+  color: rgb(3, 10, 99);
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+.container .card .contentbx p {
+  /* color: #32a3b1; */
+  color: rgb(3, 10, 99);
+}
+
+.container .card .contentbx a {
+  /* color: #32a3b1; */
+  color: rgb(3, 10, 99);
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(93, 255, 255, 0.603),
+    4px 4px 15px rgba(255, 255, 255, 1);
+}
+
+.container .card .contentbx a:hover {
+  box-shadow: inset -4px -4px 15px rgba(53, 61, 175, 0.527),
+    inset 4px 4px 15px rgba(245, 55, 198, 0.39);
+}
+
+.container .card a:hover span {
+  display: block;
+  transform: scaleX(0.98);
+}
+
+.container .card:hover .imgbx,
+.container .card:hover .contentbx {
+  transform: scale(0.98);
+}
